@@ -12,7 +12,7 @@ function login() {
     mainContent.classList.remove("hidden");
     window.scrollTo({ top: 0, behavior: "smooth" });
   } else {
-    loginError.textContent = "Hmm... wrong PIN. Try again ♡";
+    loginError.textContent = "Hmm... wrong PIN. Try again ";
     pinInput.value = "";
     pinInput.focus();
   }
@@ -68,10 +68,10 @@ const gardenMessage = document.getElementById("garden-message");
 const resetButton = document.getElementById("garden-reset");
 
 const flowerMessages = {
-  "🌼": "A little sunshine, especially for you.",
-  "🌷": "For someone who makes ordinary days lovely.",
-  "🌻": "May your days always find their sunlight.",
-  "🌸": "A little bloom for my favorite person."
+ "🌼": "I'm glad I get to know you, love.",
+ "🌷": "Hope you have a lovely day.",
+ "🌻": "You make things feel a brighter.",
+ "🌸": "A little reminder that I adore you."
 };
 
 document.querySelectorAll(".flower-button").forEach(button => {
