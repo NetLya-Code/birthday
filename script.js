@@ -22,7 +22,7 @@ pinInput.addEventListener("keydown", (event) => {
   if (event.key === "Enter") login();
 });
 
-// LETTER MODAL
+
 const letterModal = document.getElementById("letter-modal");
 const openLetter = document.getElementById("open-letter");
 
@@ -30,7 +30,7 @@ openLetter.addEventListener("click", () => {
   letterModal.classList.add("show");
 });
 
-// POEM MODALS
+
 document.querySelectorAll("[data-open]").forEach((button) => {
   button.addEventListener("click", () => {
     const modal = document.getElementById(button.dataset.open);
@@ -38,7 +38,7 @@ document.querySelectorAll("[data-open]").forEach((button) => {
   });
 });
 
-// CLOSE ALL MODALS
+
 document.querySelectorAll("[data-close]").forEach((button) => {
   button.addEventListener("click", () => {
     document.getElementById(button.dataset.close).classList.remove("show");
@@ -59,9 +59,7 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-/* ========================================
-   FLOWER GARDEN INTERACTION
-======================================== */
+
 
 const flowerField = document.getElementById("flower-field");
 const gardenMessage = document.getElementById("garden-message");
@@ -112,7 +110,7 @@ resetButton.addEventListener("click", () => {
   }, 180);
 });
 
-// MUSIC PLAYER
+
 const music = document.getElementById("background-music");
 const musicButton = document.getElementById("music-button");
 const musicStatus = document.getElementById("music-status");
@@ -125,7 +123,7 @@ const prevButton = document.getElementById("music-prev");
 const nextButton = document.getElementById("music-next");
 const playlistContainer = document.getElementById("music-playlist");
 
-// SONG LIST
+
 const songs = [
   {
     title: "Birthday",
@@ -156,7 +154,7 @@ const songs = [
 
 let currentSong = 0;
 
-// LOAD SONG
+
 function loadSong(index) {
   currentSong = (index + songs.length) % songs.length;
 
@@ -169,7 +167,7 @@ function loadSong(index) {
   updatePlaylist();
 }
 
-// PLAY SONG
+
 async function playSong() {
   try {
     await music.play();
@@ -183,7 +181,7 @@ async function playSong() {
   }
 }
 
-// PAUSE SONG
+
 function pauseSong() {
   music.pause();
 
@@ -192,7 +190,7 @@ function pauseSong() {
   musicDisc.classList.remove("playing");
 }
 
-// PLAY / PAUSE BUTTON
+
 musicButton.addEventListener("click", () => {
   if (music.paused) {
     playSong();
@@ -201,25 +199,25 @@ musicButton.addEventListener("click", () => {
   }
 });
 
-// NEXT SONG
+
 nextButton.addEventListener("click", () => {
   loadSong(currentSong + 1);
   playSong();
 });
 
-// PREVIOUS SONG
+
 prevButton.addEventListener("click", () => {
   loadSong(currentSong - 1);
   playSong();
 });
 
-// AUTO NEXT WHEN SONG ENDS
-music.addEventListener("ended", () => {
+
+music.addEventListener("ended", async () => {
   loadSong(currentSong + 1);
-  playSong();
+  await playSong();
 });
 
-// UPDATE PLAYLIST DISPLAY
+
 function updatePlaylist() {
   playlistContainer.innerHTML = "";
 
@@ -242,9 +240,9 @@ function updatePlaylist() {
   });
 }
 
-// INITIALIZE
+
 loadSong(0);
-// MUSIC PROGRESS
+
 const progressFill = document.getElementById("progress-fill");
 const progressContainer = document.getElementById("progress-container");
 const currentTimeDisplay = document.getElementById("current-time");
@@ -259,7 +257,7 @@ function formatTime(time) {
   return `${minutes}:${String(seconds).padStart(2, "0")}`;
 }
 
-// UPDATE PROGRESS
+
 music.addEventListener("timeupdate", () => {
   if (!music.duration) return;
 
@@ -269,14 +267,14 @@ music.addEventListener("timeupdate", () => {
   currentTimeDisplay.textContent = formatTime(music.currentTime);
 });
 
-// SHOW DURATION
+
 music.addEventListener("loadedmetadata", () => {
   durationDisplay.textContent = formatTime(music.duration);
   progressFill.style.width = "0%";
   currentTimeDisplay.textContent = "0:00";
 });
 
-// CLICK PROGRESS BAR TO SEEK
+
 progressContainer.addEventListener("click", (event) => {
   if (!music.duration) return;
 
@@ -286,7 +284,7 @@ progressContainer.addEventListener("click", (event) => {
   music.currentTime = position * music.duration;
 });
 
-// REVEAL ANIMATION
+
 const revealElements = document.querySelectorAll(
   ".section-heading, .letter-paper, .poem-card, .garden-box, .music-card"
 );
@@ -303,16 +301,14 @@ if ("IntersectionObserver" in window) {
 } else {
   revealElements.forEach((element) => element.classList.add("visible"));
 }
-// =========================================
-// LITTLE MOMENTS GALLERY MODAL
-// =========================================
+
 
 const galleryModal = document.getElementById("photo-gallery-modal");
 const galleryOpen = document.getElementById("gallery-open");
 const galleryClose = document.getElementById("gallery-close");
 const galleryCollage = document.getElementById("gallery-collage");
 
-// GENERATE 40 PHOTOS
+
 function generateGallery() {
   galleryCollage.innerHTML = "";
 
@@ -337,13 +333,13 @@ function generateGallery() {
   }
 }
 
-// OPEN GALLERY
+
 galleryOpen.addEventListener("click", () => {
   galleryModal.classList.add("show");
   document.body.style.overflow = "hidden";
 });
 
-// CLOSE GALLERY
+
 function closeGallery() {
   galleryModal.classList.remove("show");
   document.body.style.overflow = "";
@@ -351,14 +347,14 @@ function closeGallery() {
 
 galleryClose.addEventListener("click", closeGallery);
 
-// CLICK OUTSIDE TO CLOSE
+
 galleryModal.addEventListener("click", (event) => {
   if (event.target === galleryModal) {
     closeGallery();
   }
 });
 
-// ESCAPE TO CLOSE
+
 document.addEventListener("keydown", (event) => {
   if (
     event.key === "Escape" &&
