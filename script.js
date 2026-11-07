@@ -368,5 +368,5 @@ document.addEventListener("keydown", (event) => {
   }
 });
 
-// INITIALIZE GALLERY
+
 generateGallery();
