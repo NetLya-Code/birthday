@@ -46,7 +46,7 @@ button, input { font: inherit; }
 .cloud-three { top: 83%; left: -180px; animation-delay: -22s; transform: scale(1.1); }
 @keyframes cloudDrift { to { translate: calc(100vw + 350px) 0; } }
 
-/* Snoopy sticker positions. Put snoopy-1.gif, snoopy-2.gif and snoopy-3.gif in assets/. */
+
 .snoopy-sticker { position: fixed; z-index: 8; width: 112px; pointer-events: none; filter: drop-shadow(3px 5px 0 rgba(48,78,135,.13)); animation: snoopyBob 4s ease-in-out infinite; }
 .snoopy-sticker img { width: 100%; height: auto; display: block; object-fit: contain; }
 .snoopy-sticker span { display: block; width: max-content; max-width: 100px; margin: -2px auto 0; padding: 4px 9px; border: 1.5px solid var(--blue-dark); border-radius: 14px; background: var(--cream); color: var(--blue-dark); font-family: 'Patrick Hand', cursive; font-size: 14px; transform: rotate(-4deg); text-align: center; }
@@ -59,7 +59,7 @@ button, input { font: inherit; }
 @keyframes snoopyBob { 0%,100% { transform: translateY(0) rotate(-4deg); } 50% { transform: translateY(-12px) rotate(3deg); } }
 @keyframes snoopyBobReverse { 0%,100% { transform: translateY(0) rotate(5deg); } 50% { transform: translateY(11px) rotate(-4deg); } }
 
-/* LOGIN */
+
 .login-screen { position: fixed; inset: 0; z-index: 300; display: grid; place-items: center; padding: 22px; overflow: hidden; background: linear-gradient(145deg, #9fc0f0, #dceaff 55%, #fff4dc); }
 .login-card { position: relative; z-index: 2; width: min(420px, 100%); padding: 55px 35px 32px; text-align: center; background: var(--cream); border: 2px solid var(--blue-dark); border-radius: 28px; box-shadow: 9px 10px 0 rgba(48,78,135,.22); animation: cardEnter .7s ease both; }
 @keyframes cardEnter { from { opacity: 0; transform: translateY(25px) rotate(-2deg); } to { opacity: 1; transform: translateY(0) rotate(0); } }
@@ -84,7 +84,7 @@ button, input { font: inherit; }
 .login-star { position: absolute; color: white; font-size: 40px; animation: floatDecor 5s infinite; }
 .login-star-a { left: 15%; top: 20%; }.login-star-b { right: 15%; bottom: 20%; }
 
-/* NAV */
+
 .navbar { width: min(1100px, 90%); margin: 0 auto; padding: 24px 0; display: flex; align-items: center; justify-content: space-between; position: relative; z-index: 5; }
 .brand { color: var(--ink); text-decoration: none; font-family: 'Pacifico', cursive; font-size: 18px; }
 .brand span { color: #d77e91; }
@@ -92,13 +92,13 @@ button, input { font: inherit; }
 .nav-links a { text-decoration: none; color: var(--ink); font-size: 12px; font-weight: 800; transition: .2s; }
 .nav-links a:hover { color: var(--blue-deep); }
 
-/* SECTIONS */
+
 .section { width: min(1050px, 90%); margin: 0 auto; padding: 95px 0; position: relative; z-index: 2; }
 .section-heading { text-align: center; margin-bottom: 45px; }
 .section-heading h2 { font-family: 'Playfair Display', serif; font-size: clamp(30px, 5vw, 45px); margin: 12px 0; }
 .section-heading > p:last-child { color: var(--muted); font-size: 13px; }
 
-/* HERO */
+
 .hero {
   min-height: 640px;
   display: flex;
@@ -171,7 +171,7 @@ button, input { font: inherit; }
   margin: 10px 0 25px;
 }
 
-/* HERO ART */
+
 .hero-art {
   position: relative;
   min-height: 440px;
@@ -181,12 +181,12 @@ button, input { font: inherit; }
   isolation: isolate;
 }
 
-/* Lingkaran kuning lama dihilangkan */
+
 .sun-shape {
   display: none;
 }
 
-/* Dekorasi lama tidak dipakai */
+
 .hero-cloud,
 .hero-star,
 .hero-heart,
@@ -194,7 +194,7 @@ button, input { font: inherit; }
   display: none;
 }
 
-/* KARTU TANGGAL */
+
 .hero-note {
   position: absolute;
   top: 8%;
@@ -232,7 +232,7 @@ button, input { font: inherit; }
   color: #c8798b;
 }
 
-/* FOTO DIKA */
+
 .dika-cutout {
   position: absolute;
   z-index: 6;
@@ -273,7 +273,7 @@ button, input { font: inherit; }
   filter: none;
 }
 
-/* FOTO CADANGAN */
+
 .dika-cutout.photo-missing img {
   display: none;
 }
@@ -299,7 +299,7 @@ button, input { font: inherit; }
   display: flex;
 }
 
-/* CAPTION FOTO */
+
 .photo-caption {
   margin-top: 9px;
   font-family: 'Caveat', cursive;
@@ -308,7 +308,7 @@ button, input { font: inherit; }
   white-space: nowrap;
 }
 
-/* PITA FOTO */
+
 .photo-tape {
   position: absolute;
   top: -13px;
@@ -321,7 +321,7 @@ button, input { font: inherit; }
   transform: translateX(-50%) rotate(5deg);
 }
 
-/* PARTY HAT */
+
 .party-hat {
   position: absolute;
   z-index: 10;
@@ -345,7 +345,7 @@ button, input { font: inherit; }
   font-size: 18px;
 }
 
-/* STIKER BEST DAY EVER */
+
 .hero-sticker {
   position: absolute;
   right: 1%;
@@ -367,7 +367,7 @@ button, input { font: inherit; }
   box-shadow: 3px 4px 0 rgba(48,78,135,.17);
 }
 
-/* DEKORASI BARU */
+
 .birthday-deco {
   position: absolute;
   z-index: 9;
@@ -375,7 +375,7 @@ button, input { font: inherit; }
   user-select: none;
 }
 
-/* Mahkota */
+
 .deco-crown {
   top: 8%;
   right: 17%;
@@ -387,7 +387,7 @@ button, input { font: inherit; }
   filter: drop-shadow(2px 3px 0 rgba(48,78,135,.13));
 }
 
-/* Bunga */
+
 .deco-flower {
   top: 28%;
   right: 2%;
@@ -399,7 +399,7 @@ button, input { font: inherit; }
   text-shadow: 1px 2px 0 white;
 }
 
-/* Kilau */
+
 .deco-sparkle {
   top: 45%;
   left: 8%;
@@ -410,7 +410,7 @@ button, input { font: inherit; }
   animation: sparkleFloat 3s ease-in-out infinite;
 }
 
-/* Hati */
+
 .deco-heart {
   bottom: 17%;
   left: 12%;
@@ -422,7 +422,7 @@ button, input { font: inherit; }
   animation: heartFloat 3.5s ease-in-out infinite;
 }
 
-/* Bintang */
+
 .deco-star {
   right: 8%;
   bottom: 28%;
@@ -434,7 +434,7 @@ button, input { font: inherit; }
   animation: sparkleFloat 4s ease-in-out infinite reverse;
 }
 
-/* ANIMASI FOTO */
+
 @keyframes photoFloat {
   0%, 100% {
     transform: translate(-50%, -50%) rotate(3deg);
@@ -469,7 +469,7 @@ button, input { font: inherit; }
   }
 }
 
-/* SCROLL */
+
 .scroll-hint {
   margin-top: 45px;
   text-align: center;
@@ -485,7 +485,7 @@ button, input { font: inherit; }
     transform: translateY(6px);
   }
 }
-/* LETTER */
+
 .letter-section { padding-top: 70px; }
 .letter-paper { position: relative; width: min(720px, 100%); margin: auto; padding: 55px 60px; background-color: var(--paper); background-image: repeating-linear-gradient(transparent 0 34px, rgba(107,151,211,.14) 35px); border: 2px solid #789bd5; border-radius: 20px 24px 18px 22px; box-shadow: 9px 10px 0 rgba(48,78,135,.2); transform: rotate(-.5deg); }
 .tape { position: absolute; width: 90px; height: 25px; background: rgba(255,224,139,.82); border: 1px solid rgba(48,78,135,.15); }
@@ -496,7 +496,7 @@ button, input { font: inherit; }
 .letter-sign { font-family: 'Pacifico', cursive; text-align: right; margin: 28px 0; color: #7183a4; }.letter-sign span { color: #c8798b; }
 .text-button { border: 0; background: transparent; color: var(--blue-deep); font-weight: 800; cursor: pointer; text-decoration: underline; text-underline-offset: 5px; }
 
-/* POEMS */
+
 .poem-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -556,7 +556,7 @@ button, input { font: inherit; }
   font-size: 11px;
 }
 
-/* READ THE FULL LETTER */
+
 .poem-full {
   margin-top: 22px;
   padding-top: 15px;
@@ -594,9 +594,7 @@ button, input { font: inherit; }
   line-height: 1.8;
 }
 
-/* ========================================
-   FLOWER GARDEN — STORYBOOK EDITION
-======================================== */
+
 
 .garden-section {
   position: relative;
@@ -612,7 +610,7 @@ button, input { font: inherit; }
   isolation: isolate;
 }
 
-/* SKY */
+
 .garden-sky {
   height: 245px;
   position: relative;
@@ -643,7 +641,7 @@ button, input { font: inherit; }
   to { transform: scale(1.07); }
 }
 
-/* CLOUDS */
+
 .garden-cloud {
   position: absolute;
   color: #fff;
@@ -671,7 +669,7 @@ button, input { font: inherit; }
   to { transform: translateX(28px); }
 }
 
-/* LITTLE DETAILS IN THE SKY */
+
 .garden-sky::before,
 .garden-sky::after {
   content: "✦";
@@ -697,7 +695,7 @@ button, input { font: inherit; }
   to { opacity: 1; transform: scale(1.2) rotate(25deg); }
 }
 
-/* MESSAGE */
+
 .garden-message {
   position: absolute;
   left: 50%;
@@ -715,7 +713,7 @@ button, input { font: inherit; }
   transition: opacity .25s ease, transform .25s ease;
 }
 
-/* GROUND */
+
 .garden-ground {
   height: 225px;
   position: relative;
@@ -723,7 +721,7 @@ button, input { font: inherit; }
   background: linear-gradient(180deg, #a9d49a 0%, #91c887 45%, #76ae78 100%);
 }
 
-/* BACK HILL */
+
 .garden-ground::before {
   content: "";
   position: absolute;
@@ -735,7 +733,7 @@ button, input { font: inherit; }
   background: #b8dda7;
 }
 
-/* FRONT HILL */
+
 .garden-ground::after {
   content: "";
   position: absolute;
@@ -747,7 +745,7 @@ button, input { font: inherit; }
   background: #78b478;
 }
 
-/* GRASS */
+
 .grass {
   position: absolute;
   bottom: 0;
@@ -758,7 +756,7 @@ button, input { font: inherit; }
   background: #659c69;
 }
 
-/* FLOWER FIELD */
+
 .flower-field {
   position: absolute;
   bottom: 17px;
@@ -774,7 +772,7 @@ button, input { font: inherit; }
   z-index: 4;
 }
 
-/* FLOWERS */
+
 .bloom {
   position: relative;
   display: inline-block;
@@ -804,7 +802,7 @@ button, input { font: inherit; }
   50% { rotate: 3deg; }
 }
 
-/* FLOWER CONTROLS */
+
 .flower-controls {
   display: flex;
   justify-content: center;
@@ -827,7 +825,7 @@ button, input { font: inherit; }
   box-shadow: 3px 4px 0 rgba(48, 78, 135, .18);
   transition: transform .2s ease, background .2s ease, box-shadow .2s ease;
 }
-/* START OVER BUTTON */
+
 .reset-button {
   display: block;
   margin: 20px auto 0;
@@ -939,7 +937,7 @@ button, input { font: inherit; }
   }
 }
 
-/* CURRENT TRACK */
+
 .current-track {
   margin-top: 22px;
   padding: 17px 19px;
@@ -979,7 +977,7 @@ button, input { font: inherit; }
   color: #6689c5;
 }
 
-/* EQUALIZER */
+
 .music-equalizer {
   display: flex;
   align-items: center;
@@ -1021,7 +1019,7 @@ button, input { font: inherit; }
   to { height: 18px; }
 }
 
-/* PROGRESS BAR */
+
 .music-progress {
   margin-top: 20px;
 }
@@ -1061,7 +1059,7 @@ button, input { font: inherit; }
   color: #6689c5;
 }
 
-/* RESPONSIVE */
+
 @media (max-width: 700px) {
   .music-card {
     flex-direction: column;
@@ -1090,7 +1088,7 @@ button, input { font: inherit; }
     text-align: left;
   }
 }
-/* FOOTER + MODAL */
+
 .footer { padding: 80px 20px 45px; text-align: center; position: relative; z-index: 2; }
 .footer-star { font-size: 30px; color: #d78c9a; }.footer-script { font-family: 'Pacifico', cursive; font-size: 16px; margin: 15px 0; }.footer h2 { font-family: 'Playfair Display', serif; font-size: 40px; }.footer h2 span { color: #d78c9a; }.footer-small { font-size: 10px; margin: 15px 0; color: #7186ad; }.footer-decoration { margin-top: 25px; color: var(--blue-deep); }
 .modal { display: none; position: fixed; inset: 0; z-index: 400; padding: 20px; background: rgba(39,61,104,.55); place-items: center; overflow-y: auto; }
@@ -1098,18 +1096,18 @@ button, input { font: inherit; }
 .close-modal { position: absolute; top: 12px; right: 17px; border: 0; background: transparent; font-size: 30px; cursor: pointer; color: var(--ink); }.modal h2 { font-family: 'Playfair Display', serif; font-size: 35px; margin: 12px 0 25px; }
 .full-letter p { font-family: 'Patrick Hand', cursive; font-size: 19px; line-height: 1.8; margin-bottom: 17px; }
 
-/* REVEAL */
+
 .section-heading, .letter-paper, .poem-card, .garden-box, .music-card { opacity: 0; transform: translateY(24px); transition: opacity .7s ease, transform .7s ease; }
 .section-heading.visible, .letter-paper.visible, .poem-card.visible, .garden-box.visible, .music-card.visible { opacity: 1; transform: translateY(0); }
 
-/* RESPONSIVE */
+
 @media (max-width: 700px) {
   .navbar { width: 88%; }
   .nav-links { gap: 12px; }
   .nav-links a { font-size: 10px; }
   .brand { font-size: 14px; }
 
-  /* HERO */
+  
   .section { padding: 70px 0; }
   .hero { min-height: auto; padding-top: 65px; }
 
@@ -1187,7 +1185,7 @@ button, input { font: inherit; }
 
   .scroll-hint { margin-top: 25px; }
 
-  /* BAGIAN LAIN */
+  
   .letter-paper { padding: 45px 25px; }
   .poem-grid { grid-template-columns: 1fr; gap: 25px; }
   .poem-card { min-height: 240px; }
@@ -1222,9 +1220,7 @@ button, input { font: inherit; }
     scroll-behavior: auto !important;
   }
 }
-/* =========================================
-   MUSIC + LITTLE MOMENTS
-========================================= */
+
 
 .music-card {
   position: relative;
@@ -1333,7 +1329,7 @@ button, input { font: inherit; }
   color: #6689c5;
 }
 
-/* EQUALIZER */
+
 .music-equalizer {
   display: flex;
   align-items: center;
@@ -1364,7 +1360,7 @@ button, input { font: inherit; }
   to { height: 18px; }
 }
 
-/* MUSIC BUTTONS */
+
 .music-controls {
   display: flex;
   align-items: center;
@@ -1396,7 +1392,7 @@ button, input { font: inherit; }
   padding: 12px 17px;
 }
 
-/* PROGRESS */
+
 .music-progress {
   margin-top: 15px;
 }
@@ -1441,9 +1437,7 @@ button, input { font: inherit; }
   color: var(--muted);
 }
 
-/* =========================================
-   LITTLE MOMENTS PREVIEW
-========================================= */
+
 
 .memory-preview {
   position: relative;
@@ -1532,7 +1526,7 @@ button, input { font: inherit; }
   transform: translate(7px, -5px) rotate(14deg);
 }
 
-/* TAPE */
+
 .polaroid-two::before {
   content: "";
   position: absolute;
@@ -1546,7 +1540,7 @@ button, input { font: inherit; }
   z-index: 4;
 }
 
-/* MORE BUTTON */
+
 .memory-more {
   position: relative;
   z-index: 5;
@@ -1568,7 +1562,7 @@ button, input { font: inherit; }
   background: #cbdfff;
 }
 
-/* DOODLES */
+
 .memory-doodle {
   position: absolute;
   color: #6689c5;
@@ -1593,9 +1587,7 @@ button, input { font: inherit; }
   font-size: 22px;
 }
 
-/* =========================================
-   PHOTO GALLERY MODAL
-========================================= */
+
 
 .photo-modal {
   position: fixed;
@@ -1675,7 +1667,7 @@ button, input { font: inherit; }
   transform: rotate(90deg);
 }
 
-/* GALLERY COLLAGE */
+
 .gallery-body {
   display: grid;
   grid-template-columns: 1fr 190px;
@@ -1729,7 +1721,7 @@ button, input { font: inherit; }
   font-size: 14px;
 }
 
-/* RANDOMIZED POLAROID ARRANGEMENT */
+
 .gallery-polaroid:nth-child(7n + 1) {
   transform: rotate(-6deg) translateY(3px);
 }
@@ -1758,7 +1750,7 @@ button, input { font: inherit; }
   transform: rotate(3deg) translateY(-4px);
 }
 
-/* DECORATIVE TAPE */
+
 .gallery-photo-one::before,
 .gallery-photo-three::before,
 .gallery-photo-six::before {
@@ -1774,7 +1766,7 @@ button, input { font: inherit; }
   z-index: 3;
 }
 
-/* SIDE NOTE */
+
 .gallery-note {
   position: relative;
   align-self: center;
@@ -1826,14 +1818,12 @@ button, input { font: inherit; }
   color: #6689c5;
 }
 
-/* HIDE PLAYLIST */
+
 .music-playlist {
   display: none !important;
 }
 
-/* =========================================
-   RESPONSIVE
-========================================= */
+
 
 @media (max-width: 850px) {
   .music-card {
